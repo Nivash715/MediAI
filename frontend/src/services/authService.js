@@ -9,5 +9,5 @@ export const authService = {
   sendOtp:   (mobile)          => api.post(API_ENDPOINTS.SEND_OTP, { mobile }),
   verifyOtp: (data)            => api.post(API_ENDPOINTS.VERIFY_OTP, data),
   refresh:   (refreshToken)    => api.post(API_ENDPOINTS.REFRESH, { refresh_token: refreshToken }),
-  updateProfile: (data)        => api.put(API_ENDPOINTS.ME, data),
+  updateProfile: (data)        => api.patch(API_ENDPOINTS.ME, data),
 }

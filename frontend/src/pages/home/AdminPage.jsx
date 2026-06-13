@@ -17,7 +17,7 @@ export default function AdminPage() {
   })
 
   const kpis = [
-    { label: 'Total Users',    value: stats?.totalUsers    || '12,453', icon: Users,       gradient: KPI_COLORS[0] },
+    { label: 'Total Users',    value: stats?.totalUsers    || '12,443', icon: Users,       gradient: KPI_COLORS[0] },
     { label: 'Total Orders',   value: stats?.totalOrders   || '4,821',  icon: ShoppingBag, gradient: KPI_COLORS[1] },
     { label: 'Revenue',        value: stats?.revenue ? formatCurrency(stats.revenue) : '₹9.2L', icon: DollarSign,  gradient: KPI_COLORS[2] },
     { label: 'Consultations',  value: stats?.consultations || '1,087',  icon: Stethoscope, gradient: KPI_COLORS[3] },

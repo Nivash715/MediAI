@@ -13,7 +13,7 @@ export const API_ENDPOINTS = {
   // Medicines
   MEDICINES:       '/medicines',
   MEDICINE_BY_ID:  '/medicines/:id',
-  MEDICINE_SEARCH: '/medicines/search',
+  MEDICINE_SEARCH: '/medicines',
   CATEGORIES:      '/medicines/categories',
 
   // Pharmacies
@@ -36,16 +36,16 @@ export const API_ENDPOINTS = {
   APPLY_COUPON:  '/cart/coupon',
 
   // Payments
-  PAYMENT_INITIATE: '/payments/initiate',
-  PAYMENT_VERIFY:   '/payments/verify',
-  PAYMENT_HISTORY:  '/payments/history',
+  PAYMENT_INITIATE: '/orders/payment/initiate',
+  PAYMENT_VERIFY:   '/orders/payment/verify',
+  PAYMENT_HISTORY:  '/orders',
 
   // Delivery
   DELIVERY_TRACK:   '/delivery/:orderId/track',
   DELIVERY_UPDATES: '/delivery/:orderId/updates',
 
   // AI / Health
-  SYMPTOM_ANALYZE:  '/ai/symptoms/analyze',
+  SYMPTOM_ANALYZE:  '/ai/symptoms',
   AI_CHAT:          '/ai/chat',
   DRUG_INTERACTION: '/ai/drug-interaction',
   HEALTH_SCORE:     '/ai/health-score',
